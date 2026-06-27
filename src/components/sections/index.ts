@@ -1,0 +1,12 @@
+export { HeroSection } from './HeroSection';
+export { TinhTatYeuSection } from './TinhTatYeuSection';
+export { DacDiemChungSection } from './DacDiemChungSection';
+export { KinhTeSection } from './KinhTeSection';
+export { ChinhTriSection } from './ChinhTriSection';
+export { TuTuongVanHoaSection } from './TuTuongVanHoaSection';
+export { XaHoiSection } from './XaHoiSection';
+export { VietNamSection } from './VietNamSection';
+export { SoDoSection } from './SoDoSection';
+export { QuizSection } from './QuizSection';
+export { KetLuanSection } from './KetLuanSection';
+export { FooterSection } from './FooterSection';

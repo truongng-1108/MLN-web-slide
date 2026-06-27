@@ -1,0 +1,236 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Merriweather', 'Lora', serif;
+    @apply text-ink-dark bg-paper-base;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  ::selection {
+    @apply bg-burgundy text-gold-light;
+  }
+}
+
+@layer components {
+  /* Vintage Paper Texture Base */
+  .vintage-paper {
+    @apply relative overflow-hidden;
+    background-image: linear-gradient(to bottom, #F0D7AB, #E8D0A3, #DEBA8A);
+  }
+
+  .vintage-paper::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+
+  /* Vintage Panel Border */
+  .vintage-border {
+    border: 3px solid #51341D;
+    box-shadow:
+      inset 0 0 0 2px #C9A35A,
+      inset 0 0 0 5px #FBE8C2,
+      0 4px 16px rgba(72, 45, 20, 0.22);
+  }
+
+  /* Ornamental Section Title */
+  .ornamental-title {
+    @apply text-center;
+  }
+
+  .ornamental-title::after {
+    content: '';
+    @apply block w-24 h-0.5 mx-auto mt-3;
+    background: linear-gradient(to right, transparent, #C9A35A, transparent);
+  }
+
+  /* Ribbon Style */
+  .ribbon {
+    @apply relative inline-block px-6 py-2;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    @apply text-gold-light;
+    background: linear-gradient(135deg, #1F3B2E 0%, #2F5140 50%, #1F3B2E 100%);
+  }
+
+  .ribbon::before,
+  .ribbon::after {
+    content: '';
+    @apply absolute top-0 bottom-0 w-4;
+    background: linear-gradient(135deg, #1F3B2E 0%, #2F5140 50%, #1F3B2E 100%);
+  }
+
+  .ribbon::before {
+    @apply -left-4;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+  }
+
+  .ribbon::after {
+    @apply -right-4;
+    clip-path: polygon(0 0, 100% 50%, 0 100%);
+  }
+
+  /* Vintage Quote Box */
+  .quote-box {
+    @apply relative p-6 bg-paper-light;
+    border: 2px solid #8C6737;
+    box-shadow: inset 0 0 0 4px #FBE8C2, inset 0 0 0 6px #C9A35A;
+  }
+
+  .quote-box::before {
+    content: '"';
+    @apply absolute -top-3 left-6 text-5xl text-burgundy opacity-40;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  }
+
+  .quote-box::after {
+    content: '"';
+    @apply absolute -bottom-8 right-6 text-5xl text-burgundy opacity-40;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+  }
+
+  /* Vintage Scroll Button */
+  .stamp-button {
+    @apply relative inline-flex items-center justify-center px-6 py-3 uppercase tracking-wider;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: 600;
+    @apply text-gold-light;
+    background: linear-gradient(135deg, #5B0F0F 0%, #7A1B16 50%, #5B0F0F 100%);
+    border: 2px solid #C9A35A;
+    box-shadow: inset 0 0 0 3px #3E0808, 0 4px 12px rgba(72, 45, 20, 0.3);
+    letter-spacing: 0.1em;
+  }
+
+  .stamp-button::before {
+    content: '';
+    @apply absolute inset-0 opacity-20;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 2px,
+      rgba(255, 255, 255, 0.1) 2px,
+      rgba(255, 255, 255, 0.1) 4px
+    );
+  }
+
+  .stamp-button:hover {
+    transform: translateY(-2px);
+    box-shadow: inset 0 0 0 3px #3E0808, 0 6px 16px rgba(72, 45, 20, 0.35);
+  }
+
+  /* Focus Ring for Accessibility */
+  .focus-vintage:focus {
+    @apply outline-none;
+    box-shadow: 0 0 0 3px #C9A35A, 0 0 0 5px #5B0F0F;
+  }
+
+  /* Number Medallion */
+  .medallion {
+    @apply relative inline-flex items-center justify-center w-12 h-12;
+    font-family: 'Playfair Display', 'Cormorant Garamond', serif;
+    font-weight: 700;
+    @apply text-gold-light;
+    background: linear-gradient(135deg, #5B0F0F 0%, #7A1B16 50%, #5B0F0F 100%);
+    border: 3px solid #C9A35A;
+    box-shadow: inset 0 0 0 2px #3E0808, 0 2px 8px rgba(72, 45, 20, 0.3);
+  }
+
+  /* Vintage Arrow */
+  .vintage-arrow-right {
+    @apply relative flex items-center;
+  }
+
+  .vintage-arrow-right::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 16px solid #51341D;
+  }
+
+  /* Image Frame */
+  .image-frame {
+    @apply relative bg-paper-muted p-3;
+    border: 3px solid #51341D;
+    box-shadow: inset 0 0 0 2px #C9A35A, 0 4px 12px rgba(72, 45, 20, 0.25);
+  }
+
+  .image-frame::before {
+    content: '';
+    @apply absolute inset-0 pointer-events-none opacity-20;
+    background: linear-gradient(135deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 50%,
+      transparent 100%
+    );
+  }
+
+  /* Corner Ornaments */
+  .corner-ornament {
+    @apply absolute w-16 h-16 pointer-events-none;
+    opacity: 0.15;
+  }
+
+  .corner-ornament-tl {
+    @apply top-0 left-0;
+    border-top: 4px solid #5B0F0F;
+    border-left: 4px solid #5B0F0F;
+  }
+
+  .corner-ornament-tr {
+    @apply top-0 right-0;
+    border-top: 4px solid #5B0F0F;
+    border-right: 4px solid #5B0F0F;
+  }
+
+  .corner-ornament-bl {
+    @apply bottom-0 left-0;
+    border-bottom: 4px solid #5B0F0F;
+    border-left: 4px solid #5B0F0F;
+  }
+
+  .corner-ornament-br {
+    @apply bottom-0 right-0;
+    border-bottom: 4px solid #5B0F0F;
+    border-right: 4px solid #5B0F0F;
+  }
+}
+
+@layer utilities {
+  /* Reduced Motion Support */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Line Clamp */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,9 @@
+export { VintagePage } from './VintagePage';
+export { OrnamentalSectionTitle } from './OrnamentalSectionTitle';
+export { VintagePanel } from './VintagePanel';
+export { NumberMedallion } from './NumberMedallion';
+export { RibbonTitle } from './RibbonTitle';
+export { FramedHistoricalImage } from './FramedHistoricalImage';
+export { QuoteBox } from './QuoteBox';
+export { StampButton } from './StampButton';
+export { VintageArrow } from './VintageArrow';
