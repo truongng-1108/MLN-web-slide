@@ -19,16 +19,16 @@ export const content = {
   tinhTatYeu: {
     label: 'OBJECTIVE NECESSITY',
     title: 'Tính tất yếu khách quan của thời kỳ quá độ',
-    content: 'Các nhà sáng lập chủ nghĩa xã hội khoa học khẳng định rằng sự chuyển biến từ chủ nghĩa tư bản lên chủ nghĩa cộng sản không thể diễn ra tức thì, mà cần một thời kỳ quá độ nhất định. Đây là giai đoạn cải biến cách mạng toàn diện trên các lĩnh vực kinh tế, chính trị, tư tưởng, văn hóa và xã hội.',
+    content: 'Các nhà sáng lập chủ nghĩa xã hội khoa học cũng phân biệt có hai loại quá độ từ chủ nghĩa tư bản lên chủ nghĩa cộng sản',
     subsection: 'Hai hình thức quá độ',
     haiHinhThucQuaDo: [
       {
         title: 'Quá độ trực tiếp',
-        content: 'Từ các nước đã trải qua chủ nghĩa tư bản phát triển lên chủ nghĩa cộng sản. Theo lý luận, đây là hình thức quá độ từ nền tảng tư bản chủ nghĩa phát triển cao, nhưng đến nay chưa từng diễn ra trên thực tế.',
+        content: 'Từ các nước đã trải qua chủ nghĩa tư bản phát triển lên chủ nghĩa cộng sản và đến nay chưa từng diễn ra trên thực tế.',
       },
       {
         title: 'Quá độ gián tiếp',
-        content: 'Từ các nước chưa trải qua chủ nghĩa tư bản phát triển lên chủ nghĩa cộng sản. Các nước như Liên Xô trước đây, Đông Âu, Trung Quốc, Việt Nam… đều trải qua hoặc đang trải qua thời kỳ quá độ gián tiếp với trình độ phát triển khác nhau.',
+        content: 'Từ các nước chưa trải qua chủ nghĩa tư bản phát triển lên chủ nghĩa cộng sản như Liên Xô, Đông Âu trước đây, Trung Quốc, Việt Nam… đều đang trải qua thời kỳ quá độ gián tiếp với những trình độ phát triển khác nhau.',
       },
     ],
     highlight: 'Trong bối cảnh toàn cầu hóa và cách mạng công nghiệp 4.0, dưới sự lãnh đạo của Đảng Cộng sản, Việt Nam có thể quá độ lên chủ nghĩa xã hội bỏ qua chế độ tư bản chủ nghĩa.',

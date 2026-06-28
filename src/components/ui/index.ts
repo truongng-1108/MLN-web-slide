@@ -1,4 +1,5 @@
 export { VintagePage } from './VintagePage';
+export { Header } from './Header';
 export { OrnamentalSectionTitle } from './OrnamentalSectionTitle';
 export { VintagePanel } from './VintagePanel';
 export { NumberMedallion } from './NumberMedallion';

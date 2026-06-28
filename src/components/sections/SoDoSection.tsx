@@ -219,13 +219,13 @@ const edgeTypes = {
 };
 
 const graphPositions = {
-  'objective-necessity': { x: 60, y: 40, width: 360 },
-  'formation-conditions': { x: 690, y: 35, width: 450 },
-  essence: { x: 70, y: 445, width: 350 },
-  'destination-socialism': { x: 80, y: 835, width: 360 },
-  'four-fields': { x: 665, y: 805, width: 520 },
-  'why-long': { x: 1395, y: 830, width: 380 },
-  'intermediate-steps': { x: 1425, y: 380, width: 350 },
+  'objective-necessity': { x: 40, y: 40, width: 360 },
+  'formation-conditions': { x: 770, y: 20, width: 460 },
+  'intermediate-steps': { x: 1620, y: 40, width: 360 },
+  essence: { x: 40, y: 940, width: 360 },
+  'destination-socialism': { x: 470, y: 1080, width: 360 },
+  'four-fields': { x: 920, y: 940, width: 540 },
+  'why-long': { x: 1600, y: 1020, width: 380 },
 } as const;
 
 const centerId = transitionKnowledgeGraph.center.id;
@@ -234,20 +234,20 @@ const initialNodes: Node[] = [
   {
     id: transitionKnowledgeGraph.mainFlow.from.id,
     type: 'state',
-    position: { x: 520, y: 475 },
-    data: { ...transitionKnowledgeGraph.mainFlow.from, tone: 'old', width: 230 },
+    position: { x: 90, y: 560 },
+    data: { ...transitionKnowledgeGraph.mainFlow.from, tone: 'old', width: 250 },
   },
   {
     id: centerId,
     type: 'bridge',
-    position: { x: 805, y: 430 },
-    data: { ...transitionKnowledgeGraph.center, width: 410 },
+    position: { x: 800, y: 525 },
+    data: { ...transitionKnowledgeGraph.center, width: 420 },
   },
   {
     id: transitionKnowledgeGraph.mainFlow.to.id,
     type: 'state',
-    position: { x: 1270, y: 475 },
-    data: { ...transitionKnowledgeGraph.mainFlow.to, tone: 'new', width: 240 },
+    position: { x: 1680, y: 560 },
+    data: { ...transitionKnowledgeGraph.mainFlow.to, tone: 'new', width: 250 },
   },
   ...transitionKnowledgeGraph.groups.map((group) => {
     const placement = graphPositions[group.id as keyof typeof graphPositions];
