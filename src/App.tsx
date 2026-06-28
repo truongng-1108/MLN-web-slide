@@ -1,4 +1,4 @@
-import { VintagePage } from './components/ui';
+import { VintagePage, Header } from './components/ui';
 import {
   HeroSection,
   TinhTatYeuSection,
@@ -17,6 +17,7 @@ import {
 function App() {
   return (
     <VintagePage>
+      <Header />
       <HeroSection />
       <TinhTatYeuSection />
       <DacDiemChungSection />
