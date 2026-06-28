@@ -116,7 +116,7 @@ export function HeroSection() {
               placeholderText="[Chèn ảnh minh họa tổng quan Mác – Lênin / thời kỳ quá độ / poster CNXH]"
               alt="Minh họa thời kỳ quá độ lên chủ nghĩa xã hội"
               aspectRatio="portrait"
-              src="public\images\nam_hinh_thai_kinh_te.jpg"
+              src="/images/nam_hinh_thai_kinh_te.jpg"
               className="border-none p-0"
             />
           </motion.div>

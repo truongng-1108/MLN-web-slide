@@ -29,7 +29,7 @@ export function TinhTatYeuSection() {
         </motion.div>
         <div className="mt-12">
           <FramedHistoricalImage
-            src="public\images\phan2.jpg"
+            src="/images/phan2.jpg"
             placeholderText="[Chèn ảnh/sơ đồ: Quá độ trực tiếp và quá độ gián tiếp]"
             alt="Sơ đồ hai hình thức quá độ"
             aspectRatio="landscape"
