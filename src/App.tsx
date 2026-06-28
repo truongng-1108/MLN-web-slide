@@ -11,6 +11,7 @@ import {
   SoDoSection,
   QuizSection,
   KetLuanSection,
+  ToolsSection,
   FooterSection,
 } from './components/sections';
 
@@ -29,6 +30,7 @@ function App() {
       <SoDoSection />
       <QuizSection />
       <KetLuanSection />
+      <ToolsSection />
       <FooterSection />
     </VintagePage>
   );

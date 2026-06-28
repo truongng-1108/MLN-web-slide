@@ -9,4 +9,5 @@ export { VietNamSection } from './VietNamSection';
 export { SoDoSection } from './SoDoSection';
 export { QuizSection } from './QuizSection';
 export { KetLuanSection } from './KetLuanSection';
+export { ToolsSection } from './ToolsSection';
 export { FooterSection } from './FooterSection';
